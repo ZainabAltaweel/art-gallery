@@ -1,0 +1,384 @@
+/* ============================================================
+   Zainab Altaweel — Art Portfolio
+   Palette: cream / near-black / white. No accent color.
+   Type: Cormorant Garamond (display) + Jost (ui/body) + Amiri (Arabic)
+   ============================================================ */
+
+:root {
+  --cream: #F5F1E8;
+  --ink: #141414;
+  --white: #FFFFFF;
+  --line: rgba(20, 20, 20, 0.12);
+  --line-on-dark: rgba(245, 241, 232, 0.16);
+  --max-width: 1400px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+.display {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+/* Arabic-script text */
+.rtl-text {
+  font-family: 'Amiri', 'Cormorant Garamond', serif;
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 1.9;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px clamp(20px, 5vw, 56px);
+  color: var(--white);
+  mix-blend-mode: difference;
+}
+
+.topbar--light {
+  position: static;
+  color: var(--ink);
+  mix-blend-mode: normal;
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.back-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.back-link:hover { opacity: 1; }
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  height: 92vh;
+  min-height: 480px;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(160deg, #1c1c1c 0%, var(--ink) 55%, #0d0d0d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__placeholder-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(245,241,232,0.035) 0, rgba(245,241,232,0.035) 1px, transparent 1px, transparent 34px),
+    repeating-linear-gradient(-45deg, rgba(245,241,232,0.035) 0, rgba(245,241,232,0.035) 1px, transparent 1px, transparent 34px);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: var(--cream);
+  padding: 0 24px;
+}
+
+.hero__name {
+  font-size: clamp(2.6rem, 8vw, 6rem);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  font-weight: 300;
+}
+
+.hero__tagline {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: clamp(0.78rem, 1.4vw, 0.95rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  opacity: 0.82;
+  margin: 0;
+}
+
+.hero__note {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: rgba(245,241,232,0.35);
+}
+
+/* ---------- Albums section (dark) ---------- */
+.albums-section {
+  background: var(--ink);
+  color: var(--cream);
+  padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 56px) clamp(80px, 10vw, 140px);
+}
+
+.section-heading {
+  text-align: center;
+  margin: 0 0 clamp(40px, 6vw, 76px);
+}
+
+.section-heading__eyebrow {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-bottom: 14px;
+}
+
+.section-heading__title {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  margin: 0;
+}
+
+.album-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(28px, 3vw, 56px);
+}
+
+@media (max-width: 900px) {
+  .album-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .album-grid { grid-template-columns: 1fr; max-width: 420px; }
+}
+
+.album-card { display: block; }
+
+.album-card__frame {
+  background: var(--cream);
+  padding: clamp(10px, 1.4vw, 18px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.album-card:hover .album-card__frame {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 54px rgba(0,0,0,0.45);
+}
+
+.album-card__mat {
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.album-card__mat img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.album-card:hover .album-card__mat img { transform: scale(1.04); }
+
+.album-card__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 16px;
+}
+
+.album-card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.album-card__count {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  opacity: 0.6;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  opacity: 0.55;
+  background: var(--cream);
+}
+
+/* ---------- Album page ---------- */
+.album-header {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 120px clamp(20px, 5vw, 56px) 40px;
+  text-align: center;
+}
+
+.album-header__title {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  margin: 10px 0 8px;
+}
+
+.album-header__count {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.masonry {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px) 100px;
+  column-count: 4;
+  column-gap: clamp(14px, 1.6vw, 26px);
+}
+
+@media (max-width: 1100px) { .masonry { column-count: 3; } }
+@media (max-width: 760px)  { .masonry { column-count: 2; } }
+@media (max-width: 460px)  { .masonry { column-count: 1; } }
+
+.masonry__item {
+  break-inside: avoid;
+  margin-bottom: clamp(14px, 1.6vw, 26px);
+  cursor: zoom-in;
+  overflow: hidden;
+  background: rgba(20,20,20,0.04);
+}
+
+.masonry__item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, opacity 0.4s ease;
+}
+
+.masonry__item:hover img { transform: scale(1.015); }
+
+.empty-note {
+  text-align: center;
+  padding: 40px 20px 120px;
+  opacity: 0.5;
+  font-size: 0.85rem;
+}
+
+/* ---------- Lightbox ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(10, 10, 10, 0.96);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: clamp(16px, 4vw, 48px);
+}
+
+.lightbox.is-open { display: flex; }
+
+.lightbox__figure {
+  max-width: min(1200px, 92vw);
+  max-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox__img {
+  max-width: 100%;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox__caption {
+  margin-top: 22px;
+  max-width: 640px;
+  text-align: center;
+  color: var(--cream);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.lightbox__caption[hidden] { display: none; }
+
+.lightbox__close,
+.lightbox__nav {
+  position: absolute;
+  background: none;
+  border: none;
+  color: var(--cream);
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+}
+.lightbox__close:hover,
+.lightbox__nav:hover { opacity: 1; }
+
+.lightbox__close {
+  top: clamp(14px, 3vw, 30px);
+  right: clamp(16px, 4vw, 40px);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.lightbox__nav {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.4rem;
+  padding: 10px 16px;
+}
+
+.lightbox__nav--prev { left: clamp(4px, 2vw, 24px); }
+.lightbox__nav--next { right: clamp(4px, 2vw, 24px); }
+
+.lightbox__counter {
+  position: absolute;
+  bottom: clamp(14px, 3vw, 28px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: rgba(245,241,232,0.45);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
+@media (max-width: 600px) {
+  .lightbox__nav { font-size: 1.8rem; padding: 8px 10px; }
+}

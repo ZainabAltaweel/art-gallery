@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alnahrain University — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">05 works</p>
+  <h1 class="album-header__title display">Alnahrain University</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:1.4724"><img src="../../assets/images/alnahrain-university/01.jpg" width="960" height="652" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.4502"><img src="../../assets/images/alnahrain-university/02.jpg" width="960" height="662" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.5434"><img src="../../assets/images/alnahrain-university/03.jpg" width="960" height="622" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.7712"><img src="../../assets/images/alnahrain-university/04.jpg" width="960" height="542" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.7910"><img src="../../assets/images/alnahrain-university/05.jpg" width="960" height="536" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "alnahrain-university", "title": "Alnahrain University", "images": [{"file": "01.jpg", "width": 960, "height": 652}, {"file": "02.jpg", "width": 960, "height": 662}, {"file": "03.jpg", "width": 960, "height": 622}, {"file": "04.jpg", "width": 960, "height": 542}, {"file": "05.jpg", "width": 960, "height": 536}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>

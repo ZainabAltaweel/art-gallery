@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ballerina — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">07 works</p>
+  <h1 class="album-header__title display">Ballerina</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:0.8000"><img src="../../assets/images/ballerina/01.jpg" width="768" height="960" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.5500"><img src="../../assets/images/ballerina/02.jpg" width="528" height="960" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.6251"><img src="../../assets/images/ballerina/03.jpg" width="1027" height="1643" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.5625"><img src="../../assets/images/ballerina/04.jpg" width="1080" height="1920" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.8596"><img src="../../assets/images/ballerina/05.jpg" width="1071" height="1246" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7453"><img src="../../assets/images/ballerina/06.jpg" width="983" height="1319" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0000"><img src="../../assets/images/ballerina/07.jpg" width="960" height="960" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "ballerina", "title": "Ballerina", "images": [{"file": "01.jpg", "width": 768, "height": 960}, {"file": "02.jpg", "width": 528, "height": 960}, {"file": "03.jpg", "width": 1027, "height": 1643}, {"file": "04.jpg", "width": 1080, "height": 1920}, {"file": "05.jpg", "width": 1071, "height": 1246}, {"file": "06.jpg", "width": 983, "height": 1319}, {"file": "07.jpg", "width": 960, "height": 960}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>

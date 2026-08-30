@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorful — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">14 works</p>
+  <h1 class="album-header__title display">Colorful</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:0.6800"><img src="../../assets/images/colorful/01.jpg" width="1360" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0000"><img src="../../assets/images/colorful/02.jpg" width="1440" height="1440" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.5630"><img src="../../assets/images/colorful/03.jpg" width="1126" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.9324"><img src="../../assets/images/colorful/04.jpg" width="2000" height="1035" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.5094"><img src="../../assets/images/colorful/05.jpg" width="1440" height="954" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.4670"><img src="../../assets/images/colorful/06.jpg" width="934" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/colorful/07.jpg" width="1500" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/colorful/08.jpg" width="1500" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/colorful/09.jpg" width="960" height="1280" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/colorful/10.jpg" width="960" height="1280" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.5997"><img src="../../assets/images/colorful/11.jpg" width="1035" height="1726" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0000"><img src="../../assets/images/colorful/12.jpg" width="960" height="960" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.5625"><img src="../../assets/images/colorful/13.jpg" width="720" height="1280" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.8654"><img src="../../assets/images/colorful/14.jpg" width="1080" height="1248" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "colorful", "title": "Colorful", "images": [{"file": "01.jpg", "width": 1360, "height": 2000}, {"file": "02.jpg", "width": 1440, "height": 1440}, {"file": "03.jpg", "width": 1126, "height": 2000}, {"file": "04.jpg", "width": 2000, "height": 1035}, {"file": "05.jpg", "width": 1440, "height": 954}, {"file": "06.jpg", "width": 934, "height": 2000}, {"file": "07.jpg", "width": 1500, "height": 2000}, {"file": "08.jpg", "width": 1500, "height": 2000}, {"file": "09.jpg", "width": 960, "height": 1280}, {"file": "10.jpg", "width": 960, "height": 1280}, {"file": "11.jpg", "width": 1035, "height": 1726}, {"file": "12.jpg", "width": 960, "height": 960}, {"file": "13.jpg", "width": 720, "height": 1280}, {"file": "14.jpg", "width": 1080, "height": 1248}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>

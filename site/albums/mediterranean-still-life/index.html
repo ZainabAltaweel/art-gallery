@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mediterranean Still Life — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">04 works</p>
+  <h1 class="album-header__title display">Mediterranean Still Life</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:1.0005"><img src="../../assets/images/mediterranean-still-life/01.jpg" width="1959" height="1958" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0006"><img src="../../assets/images/mediterranean-still-life/02.jpg" width="1715" height="1714" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0006"><img src="../../assets/images/mediterranean-still-life/03.jpg" width="1808" height="1807" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0005"><img src="../../assets/images/mediterranean-still-life/04.jpg" width="1875" height="1874" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "mediterranean-still-life", "title": "Mediterranean Still Life", "images": [{"file": "01.jpg", "width": 1959, "height": 1958}, {"file": "02.jpg", "width": 1715, "height": 1714}, {"file": "03.jpg", "width": 1808, "height": 1807}, {"file": "04.jpg", "width": 1875, "height": 1874}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>

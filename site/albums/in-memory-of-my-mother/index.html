@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>In Memory of My Mother — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">04 works</p>
+  <h1 class="album-header__title display">In Memory of My Mother</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/in-memory-of-my-mother/01.jpg" width="1500" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7500"><img src="../../assets/images/in-memory-of-my-mother/02.jpg" width="1500" height="2000" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:1.0143"><img src="../../assets/images/in-memory-of-my-mother/06.jpg" width="1280" height="1262" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7368"><img src="../../assets/images/in-memory-of-my-mother/08.jpg" width="882" height="1197" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "in-memory-of-my-mother", "title": "In Memory of My Mother", "images": [{"file": "01.jpg", "width": 1500, "height": 2000}, {"file": "02.jpg", "width": 1500, "height": 2000}, {"file": "06.jpg", "width": 1280, "height": 1262}, {"file": "08.jpg", "width": 882, "height": 1197}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>
