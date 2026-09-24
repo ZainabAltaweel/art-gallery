@@ -3,8 +3,13 @@
     "slug": "alnahrain-university",
     "title": "Alnahrain University",
     "cover": "cover.jpg",
-    "count": 5,
+    "count": 6,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 960,
+        "height": 676
+      },
       {
         "file": "01.jpg",
         "width": 960,
@@ -36,8 +41,13 @@
     "slug": "ballerina",
     "title": "Ballerina",
     "cover": "cover.jpg",
-    "count": 7,
+    "count": 8,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1063,
+        "height": 1600
+      },
       {
         "file": "01.jpg",
         "width": 768,
@@ -79,8 +89,13 @@
     "slug": "colorful",
     "title": "Colorful",
     "cover": "cover.jpg",
-    "count": 14,
+    "count": 15,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 901,
+        "height": 1600
+      },
       {
         "file": "01.jpg",
         "width": 1360,
@@ -157,8 +172,13 @@
     "slug": "embroidery",
     "title": "Embroidery",
     "cover": "cover.jpg",
-    "count": 3,
+    "count": 4,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1200,
+        "height": 1600
+      },
       {
         "file": "01.jpg",
         "width": 960,
@@ -180,8 +200,13 @@
     "slug": "faces",
     "title": "Faces",
     "cover": "cover.jpg",
-    "count": 8,
+    "count": 9,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1124,
+        "height": 1600
+      },
       {
         "file": "01.jpg",
         "width": 1364,
@@ -228,8 +253,13 @@
     "slug": "in-memory-of-my-mother",
     "title": "In Memory of My Mother",
     "cover": "cover.jpg",
-    "count": 4,
+    "count": 5,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1116,
+        "height": 1600
+      },
       {
         "file": "01.jpg",
         "width": 1500,
@@ -256,8 +286,13 @@
     "slug": "mediterranean-still-life",
     "title": "Mediterranean Still Life",
     "cover": "cover.jpg",
-    "count": 4,
+    "count": 5,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1600,
+        "height": 1599
+      },
       {
         "file": "01.jpg",
         "width": 1959,
@@ -284,8 +319,13 @@
     "slug": "pencil-ink-sketches",
     "title": "Pencil & Ink Sketches",
     "cover": "cover.jpg",
-    "count": 12,
+    "count": 13,
     "images": [
+      {
+        "file": "cover.jpg",
+        "width": 1072,
+        "height": 990
+      },
       {
         "file": "01.jpg",
         "width": 960,
