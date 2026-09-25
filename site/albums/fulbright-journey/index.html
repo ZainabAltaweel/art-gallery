@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fulbright Journey — Zainab Altaweel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header class="topbar topbar--light">
+  <a class="brand" href="../../index.html">Zainab Altaweel</a>
+  <a class="back-link" href="../../index.html">&larr; All Albums</a>
+</header>
+
+<header class="album-header">
+  <p class="album-header__count">09 works</p>
+  <h1 class="album-header__title display">Fulbright Journey</h1>
+</header>
+
+<main class="masonry">
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/cover.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/01.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/02.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/03.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/04.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/05.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/06.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/07.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+  <figure class="masonry__item" style="aspect-ratio:0.7099"><img src="../../assets/images/fulbright-journey/08.jpg" width="815" height="1148" loading="lazy" alt=""></figure>
+</main>
+
+<script type="application/json" id="album-data">{"slug": "fulbright-journey", "title": "Fulbright Journey", "images": [{"file": "cover.jpg", "width": 815, "height": 1148}, {"file": "01.jpg", "width": 815, "height": 1148}, {"file": "02.jpg", "width": 815, "height": 1148}, {"file": "03.jpg", "width": 815, "height": 1148}, {"file": "04.jpg", "width": 815, "height": 1148}, {"file": "05.jpg", "width": 815, "height": 1148}, {"file": "06.jpg", "width": 815, "height": 1148}, {"file": "07.jpg", "width": 815, "height": 1148}, {"file": "08.jpg", "width": 815, "height": 1148}]}</script>
+<script src="../../assets/js/lightbox.js"></script>
+<script>
+  var ALBUM = JSON.parse(document.getElementById('album-data').textContent);
+  PortfolioLightbox.init(ALBUM);
+</script>
+</body>
+</html>
